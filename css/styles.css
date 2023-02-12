@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: burlywood;
+    font-size: larger;
+}
+
+h4 {
+    text-align: left;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color: royalblue;
+}
+
+a:hover{
+    color: black;
+}
