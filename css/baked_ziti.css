@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    background-color: burlywood;
+    font-size: larger;
+}
+
+
+h3, li {
+    text-align: left;
+}
