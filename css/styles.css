@@ -1,21 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img { width: 100%;} 
+
 body {
+    background-color: #ffffff;
+}
+
+header {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: red;
+}
+
+.navbar {
+    display: block;;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlinks li {
+    list-style: none;
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.navlink {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navlinks li:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    font-family: 'Great Vibes', 'Poppins', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.bx-menu {
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px 10%;
+}
+
+.img-container {
+    background-image: url("../images/mac-and-cheese.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 25px 20px 25px #929292;
+    display: inline-flex;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    animation: float 4s infinite;
+}
+
+@keyframes float {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.hero-text {
+    width: 80%;
+    position: relative;
+}
+
+.hero-text .welcome-text {
+    font-size: 2rem;
+    font-family: 'Great Vibes';
+    margin: 10px 0;
+}
+
+.hero-text .main-text {
+    font-size: 4rem;
+    margin: 15px 0;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.text {
+    line-height: 1.5;
+    margin: 10px 0;
+    
+}
+
+.cta-btn, .card-btn , .all-btn{
+    display: inline-flex;
+    margin: 15px 0;
+    border: 1px solid red;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.cta-btn:hover, .card-btn:hover, .all-btn:hover {
+    transform: scale(1.1);
+    background-color: #fafafa;
+    color: red;
+}
+
+
+.recipes {
+    background-color: antiquewhite;
     text-align: center;
-    background-color: burlywood;
-    font-size: larger;
 }
 
-h4 {
-    text-align: left;
+.recipes .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px;
 }
 
-img {
-    display: block;
+.recipes .section-text {
+    line-height: 1.5;
+    margin: 10px 0 35px 0;
 }
 
-a {
-    color: royalblue;
+.recipes .cards {
+    display: flex;
 }
 
-a:hover{
-    color: black;
+.card {
+    padding: 15px;
+    background-color: #fafafa;
+    margin: 10px 15px;
+    border-radius: 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.2s all;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 2px solid red;
+}
+
+.cards .card img {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+
+}
+
+.card .card-title {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.card .card-text {
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+.all-btn {
+    margin-top: 40px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 1023px) {
+    *{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .bx-menu {
+        display: block;
+    }
+
+    .hero-text .welcome-text {
+        font-size: 1.5rem;
+    }
+
+    .hero-text .main-text {
+        font-size: 2.5rem;
+    }
+
+    .hero-text .text {
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .recipes {
+        margin-top: 40px;
+    }
+
+    .card {
+        margin: 30px 0;
+    }
 }
