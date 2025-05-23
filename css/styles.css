@@ -11,8 +11,6 @@
     scroll-behavior: smooth;
 }
 
-img { width: 100%;} 
-
 body {
     background-color: #ffffff;
 }
@@ -226,6 +224,8 @@ footer {
     *{
         flex-wrap: wrap;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .navbar {
@@ -254,7 +254,12 @@ footer {
         margin-top: 40px;
     }
 
-    .card {
-        margin: 30px 0;
+    .recipes .cards .card img {
+        width: 150px;
+        height: 150px;
     }
+    .recipes .cards .card .card-text {
+        text-align: center;
+    }
+
 }
