@@ -166,7 +166,7 @@ section {
 }
 
 .recipes {
-    background-color: antiquewhite;
+    background-color: ivory;
     text-align: center;
 }
 
@@ -189,7 +189,7 @@ section {
 
 .card {
     padding: 15px;
-    background-color: #fafafa;
+    background-color: #fff;
     margin: 10px 15px;
     border-radius: 15px;
     border: none;
@@ -457,7 +457,7 @@ footer a:hover{
 }
 
 .directions{
-    background-color: #fafafa;
+    background-color: #ffffff;
     min-height: 110vh;
 }
 
@@ -529,12 +529,11 @@ footer a:hover{
 
 .nutrition {
     min-height: 50vh;
-
+    background-color: ivory;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 2px dotted #e4e4e4 ;
     padding: 100px 0;
 }
 
