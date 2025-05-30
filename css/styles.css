@@ -43,7 +43,7 @@ header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .navlink {
@@ -52,8 +52,16 @@ header {
     font-size: 18px;
 }
 
-.navlinks li:hover {
-    transform: scale(1.1);
+.navlinks li:hover a{
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.active:hover li:hover {
+    transform: none;
 }
 
 .logo {
@@ -157,17 +165,17 @@ section {
     color: red;
 }
 
-
 .recipes {
     background-color: antiquewhite;
     text-align: center;
 }
 
-.recipes .section-title {
+.section-title {
     font-size: 3rem;
     font-weight: 700;
     margin: 40px auto;
     font-family: "Great Vibes",sans-serif;
+    text-align: center;
 }
 
 .recipes .section-text {
@@ -348,6 +356,191 @@ footer a:hover{
     color: white;
 } */
 
+/* Caprese */
+.about-recipes {
+    min-height: 10vh;
+    background-color: red;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prep-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prep-time p {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.prep-time .divider {
+    border: none;
+    border-left: 3px solid white;
+    height: 20px;
+    margin: 20px;
+}
+
+.caprese-img-container {
+    background-image: url("../images/Caprese_Appetizer.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 25px 20px 25px #929292;
+    display: inline-flex;
+    position: relative;
+}
+
+.img-container-appetizer {
+    background-image: url("../images/CapreseAppetizer-ingredients.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 25px 20px 25px #929292;
+    display: inline-flex;
+    position: relative;
+}
+
+.ingredients .container {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    gap: 5rem;
+}
+
+.ingredients .ingredient-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingredient-table .table {
+    margin: 20px;
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 25px 20px 25px #929292;
+}
+
+.ingredient-table .table ul{
+    border-top: 2px solid red;
+    padding: 20px 10px;
+}
+
+.ingredient-table .table .table-title{
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.ingredient-table .table ul li{
+    padding: 10px 20px 10px 0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.ingredients {
+    margin-bottom: 60px;
+}
+
+.directions{
+    background-color: #fafafa;
+    min-height: 110vh;
+}
+
+.directions .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.directions .container .img-container-direction {
+    background-image: url("../images/CapreseAppetize-direction.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 25px 20px 25px #d6d6d6;
+    margin-right: 30px;
+}
+
+.directions .container .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.directions .container .steps .step{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 10%;
+    border-bottom: 2px solid #e4e4e4;
+    width: 100%;
+}
+
+.nutrition .container .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nutrition .container .steps .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 10%;
+    border-right: 2px solid #e4e4e4;
+    border-left: 2px solid #e4e4e4;
+    width: 100%;
+}
+
+.directions .container .steps .step h4, .nutrition .container .steps .step  h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.directions .container .steps .step p, .nutrition .container .steps .step p{
+    font-size: 18px;
+}
+
+.nutrition {
+    min-height: 80vh;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.nutrition span {
+    font-size: 12px;
+    font-style: italic;
+}
+
 /* Media Queries */
 @media (max-width: 1023px) {
     *{
@@ -408,5 +601,26 @@ footer a:hover{
     footer {
         height: 100px;
         justify-content: center;
+    }
+    .prep-time {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prep-time p {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 10px;
+    }
+
+    .prep-time .divider {
+        display: none;
+    }
+
+    .ingredients .ingredient-table {
+        justify-content: center;
+        align-items: center;
     }
 }
