@@ -4,28 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mac_cheese.css">
-    <title>Recipes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Odin Recipes</title>
+
+    <!-- Boxicon link -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Homemade Mac And Cheese</h1>
-    <img src="../images/mac-and-cheese.webp" alt="Mac And Cheese">
-    <p>This classic baked mac and cheese recipe with a buttered bread crumb topping is creamy and comforting. It's easy to make the cheese sauce from scratch on your stovetop, starting with a roux and adding milk, Cheddar, and Parmesan, resulting in a rich, decadent sauce that coats every nook and cranny of the noodles. Serve this comfort-food macaroni and cheese casserole with grilled meats, sloppy Joes, fried chicken or alongside a salad for a meatless dinner.</p>
-    <h3>Ingredients</h3>
-    <ul>
-        <li>Macaroni</li>
-        <li>Butter and flour</li>
-        <li>Milk</li>
-        <li>Cheese</li>
-        <li>Seasonings</li>
-        <li>Bread crumbs</li>
-    </ul>
-    <h3>Steps</h3>
-    <ol>
-        <li>Boil the noodles</li>
-        <li>Make the cheese sauce</li>
-        <li>Make the topping</li>
-        <li>Bake the mac and cheese</li>
-    </ol>
+
+    <header>
+        <a href="../index.html" class="home"><h1 class="logo">Odin Recipes</h1></a>
+
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li>
+                    <a href="./Caprese-Appetizer.html" class="navlink">Caprese Appetizer</a>
+                </li>
+
+                <li>
+                    <a href="./Hummus.html" class="navlink">Super Easy Hummus</a>
+                </li>
+
+                <li>
+                    <a href="./Salsa-Fresca.html" class="navlink active">Salsa Fresca (Pico de Gallo)</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hamburger icon -->
+        <i class='bx bx-menu'></i>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2 class="welcome-text">Salsa Fresca (Pico de Gallo)</h2>
+                    <h3 class="main-text">Pico de Gallo</h3>
+                    <p class="text" style="padding-right: 30px; text-align: justify;">Sometimes when you eat authentic Mexican food, they give you this salsa stuff made with tomatoes, onions, and jalapeños. You can add a squeeze of lime juice to pico de gallo, but I prefer this basic recipe. Once you serve this with your Mexican dish such as tacos, you will want it with all your Mexican dishes!</p>
+                    <a href="#nutrition" class="cta-btn">See Nutrition Facts</a>
+                </div>
+                <div class="salsa-img-container"></div>
+            </div>
+        </section>
+
+        <section class="about-recipes">
+                <div class="prep-time">
+                    <p>Prep Time: 15 mins</p>
+                    <div class="divider"></div>
+                    <p>Additional Time: 30 mins</p>
+                    <div class="divider"></div>
+                    <p>Total Time: 45 mins</p>
+                    <div class="divider"></div>
+                    <p>Serving: 4</p>
+                    <div class="divider"></div>
+                    <p>Yield: 4 Servings</p>
+                </div>
+        </section>
+
+        <section class="ingredients">                    
+            <h2 class="section-title">Ingredients</h2>
+            <div class="container">
+                <div class="img-container-salsa"></div>
+                <div class="ingredient-table">
+                    <div class="table">
+                        <h4 class="table-title">1X</h4>
+                        <ul>
+                            <li>1 medium tomato, diced</li>
+                            <li>1 onion, finely chopped</li>
+                            <li>½ jalapeño pepper, seeded and chopped</li>
+                            <li>2 sprigs fresh cilantro, finely chopped</li>
+                            <li>1 green onion, finely chopped</li>
+                            <li>½ teaspoon garlic powder</li>
+                            <li>⅛ teaspoon salt</li>
+                            <li>⅛ teaspoon pepper</li>
+                        </ul>
+                    </div>
+                    <div class="table">
+                        <h4 class="table-title">2X</h4>
+                        <ul>
+                            <li>2 medium tomato, diced</li>
+                            <li>2 onion, finely chopped</li>
+                            <li>1 jalapeño pepper, seeded and chopped</li>
+                            <li>4 sprigs fresh cilantro, finely chopped</li>
+                            <li>2 green onion, finely chopped</li>
+                            <li>1 teaspoon garlic powder</li>
+                            <li>¼ teaspoon salt</li>
+                            <li>¼ teaspoon pepper</li>
+                        </ul>
+                    </div>
+                    <div class="table">
+                        <h4 class="table-title">4X</h4>
+                        <ul>
+                            <li>4 medium tomato, diced</li>
+                            <li>4 onion, finely chopped</li>
+                            <li>2 jalapeño pepper, seeded and chopped</li>
+                            <li>8 sprigs fresh cilantro, finely chopped</li>
+                            <li>4 green onion, finely chopped</li>
+                            <li>2 teaspoon garlic powder</li>
+                            <li>½ teaspoon salt</li>
+                            <li>½ teaspoon pepper</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions">
+            <h3 class="section-title">Directions</h3>            
+            <div class="container">
+                <div class="img-container-direction-salsa"></div>
+                <div class="steps">
+                    <div class="step">
+                        <h4>Step 1</h4>
+                        <p>Prep and gather all your ingredients.</p>
+                    </div>
+                    <div class="step">
+                        <h4>Step 2</h4>
+                        <p>Add tomato, onion, jalapeño pepper, cilantro and green onion in a medium bowl.</p>
+                    </div>
+                    <div class="step">
+                        <h4>Step 3</h4>
+                        <p>Season with garlic powder, salt, and pepper. Stir until evenly distributed.</p>
+                    </div>
+                    <div class="step">
+                        <h4>Step 4</h4>
+                        <p>Refrigerate for 30 minutes before serving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nutrition" id="nutrition">
+            <h3 class="section-title">Nutrition Facts <span>(Per Serving)</span></h3>            
+            <div class="container">
+                <div class="steps">
+                    <div class="step">
+                        <h4>Calories</h4>
+                        <p>21</p>
+                    </div>
+                    <div class="step">
+                        <h4>Fat</h4>
+                        <p>0g</p>
+                    </div>
+                    <div class="step">
+                        <h4>Carbs</h4>
+                        <p>5g</p>
+                    </div>
+                    <div class="step">
+                        <h4>Protein</h4>
+                        <p>1g</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3 class="section-title">Contact Us</h3>
+            <div class="container">
+                <div class="contact-info">
+                    <h5 class="text">Get In Touch</h5>
+                    <p><i class='bx bx-phone'></i>+123 456-7890</p>
+                    <p><i class='bx bx-envelope'></i>example@domain.com</p>
+                    <p><i class='bx bx-map'></i>123 Street, Planet Earth, Milkyway</p>
+                    <div class="divider"></div>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <form action="#">
+                    <h5 class="text">Need A Recipe? Send Us A Message</h5>
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <textarea name="message" id="message" placeholder="Enter your Message"></textarea>
+                    <input type="button" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </sction>
+    </main>
+    <footer>
+        <p>Copyright &copy;2025 by <a href="https://aryanahmed.netlify.app" target="_blank">Aryan Ahmed Adil</a>. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+        <!-- <div class="scroll-to-top">
+            <a href="#"><i class='bx bxs-up-arrow'></i></a>
+        </div> -->
+    </footer>
 </body>
 </html>
