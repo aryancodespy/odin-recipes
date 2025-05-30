@@ -21,6 +21,10 @@ header {
     align-items: center;
     padding: 20px 10%;
     background-color: red;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
 
 .navbar {
@@ -67,6 +71,10 @@ header {
 section {
     min-height: 100vh;
     padding: 20px 10%;
+}
+
+.hero {
+    margin-top: 80px;
 }
 
 .img-container {
@@ -302,9 +310,6 @@ textarea {
 
 footer{
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     background-color: red;
     display: flex;
@@ -322,7 +327,7 @@ footer a:hover{
     color: wheat;
 }
 
-.scroll-to-top a {
+/* .scroll-to-top a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,7 +346,7 @@ footer a:hover{
 .scroll-to-top a i:hover{
     background-color: red;
     color: white;
-}
+} */
 
 /* Media Queries */
 @media (max-width: 1023px) {
@@ -387,12 +392,9 @@ footer a:hover{
     }
 
     .contact .container{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .contact-info {
-        text-align: left;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .divider {
@@ -401,5 +403,10 @@ footer a:hover{
 
     form input, textarea{
         width: 100%;
+    }
+
+    footer {
+        height: 100px;
+        justify-content: center;
     }
 }
