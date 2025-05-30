@@ -130,7 +130,7 @@ section {
     
 }
 
-.cta-btn, .card-btn , .all-btn{
+.cta-btn, .card-btn , .all-btn, .submit-btn{
     display: inline-flex;
     margin: 15px 0;
     border: 1px solid red;
@@ -156,9 +156,10 @@ section {
 }
 
 .recipes .section-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
-    margin: 10px;
+    margin: 40px auto;
+    font-family: "Great Vibes",sans-serif;
 }
 
 .recipes .section-text {
@@ -175,16 +176,16 @@ section {
     background-color: #fafafa;
     margin: 10px 15px;
     border-radius: 15px;
+    border: none;
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: ease-in-out 0.2s all;
+    transition: all 0.5s ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.1);
     border: 2px solid red;
 }
 
@@ -212,13 +213,135 @@ section {
     margin-top: 40px;
 }
 
-footer {
+.contact h4 {
+    font-size: 3rem;
+    font-family: "Great Vibes", sans-serif;
+    text-align: center;
+    margin: 40px auto;
+}
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact .container .contact-info p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.contact .container .contact-info p i {
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}
+.contact .container .divider {
+    border-bottom: 2px solid #ff9797;
+}
+
+.contact .container a i {
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 0;
+    transition: all 0.1s ease;
+}
+
+.contact .container a i:hover {
+    background-color: white;
+    color: red;
+}
+
+.contact .container form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact form .input-box {
+    width: 100%;
+}
+
+.contact form .input-box input, textarea {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+textarea { 
+    width: 98%;
+    
+}
+
+.submit-btn {
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+.contact .text {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+footer{
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: wheat;
+}
+
+.scroll-to-top a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.scroll-to-top a i{
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: white;
+    color: red;
+    border-radius: 50px;
+    padding: 3px;
+    margin: 0 5px 0 0;
+}
+
+.scroll-to-top a i:hover{
+    background-color: red;
+    color: white;
+}
 /* Media Queries */
 @media (max-width: 1023px) {
     *{
@@ -262,4 +385,20 @@ footer {
         text-align: center;
     }
 
+    .contact .container{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .divider {
+        margin: 30px 0;
+    }
+
+    form input, textarea{
+        width: 100%;
+    }
 }
