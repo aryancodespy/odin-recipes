@@ -4,46 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/lasagna.css">
-    <title>Recipes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Odin Recipes</title>
+
+    <!-- Boxicon link -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Lasagna</h1>
-    <img src="../images/image.webp" alt="World's best lasagna">
-    <h3>How to Make Lasagna</h3>
-    <p>Making lasagna can be time-consuming, but the results are well worth the wait. You'll find a detailed ingredient list and step-by-step instructions in the recipe below, but let's go over the basics: </p>
-    <h3>Ingredients</h3>
-    <p>The Allrecipes community adores this lasagna recipe because it's incredibly customizable, so you can easily alter the ingredient list to suit your needs. If you want to stay true to the original recipe, though, these are the ingredients you'll need to add to your grocery list:</p>
-    <ul>
-        <li>Meat</li>
-        <li>Onion and garlic</li>
-        <li>Tomato products</li>
-        <li>Sugar</li>
-        <li>Spices and seasonings</li>
-        <li>Lasagna noodles</li>
-        <li>Cheese</li>
-        <li>Egg</li>
-    </ul>
-    <h3>Steps</h3>
-    <p>Here's a very brief overview of what you can expect when you make homemade lasagna:</p>
-    <ol>
-        <li>Make the meat sauce.</li>
-        <li>Cook the noodles.</li>
-        <li>Make the ricotta mixture.</li>
-        <li>Layer the lasagna according to the recipe instructions.</li>
-        <li>Cover with foil and bake.</li>
-        <li>Let the lasagna rest before serving. </li>
-    </ol>
-    <h3>How to Layer Lasagna</h3>
-    <p>The detailed layering instructions can be found in the recipe below, but this is the order you'll follow: </p>
-    <ol>
-        <li>Meat sauce</li>
-        <li>Noodles</li>
-        <li>Ricotta mixture</li>
-        <li>Mozzarella slices</li>
-        <li>Meat sauce</li>
-        <li>Parmesan cheese</li>
-        <li>Repeat the layers, then top with the remaining Parmesan.</li>
-    </ol>
+
+    <header>
+        <a href="./index.html" class="home"><h1 class="logo">Odin Recipes</h1></a>
+
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li>
+                    <a href="./recipes/Caprese-Appetizer.html" class="navlink active">Caprese Appetizer</a>
+                </li>
+
+                <li>
+                    <a href="./recipes/Hummus.html" class="navlink">Super Easy Hummus</a>
+                </li>
+
+                <li>
+                    <a href="./recipes/Salsa-Fresca.html" class="navlink">Salsa Fresca (Pico de Gallo)</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hamburger icon -->
+        <i class='bx bx-menu'></i>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2 class="welcome-text">Caprese Appetizer</h2>
+                    <h3 class="main-text">Best Caprese Skewers</h3>
+                    <p class="text">These colorful caprese skewers with bite-sized portions of mozzarella cheese, tomato, and basil make the perfect appetizer for holiday parties.</p>
+                    <a href="#nutrition" class="cta-btn">See Nutrition Facts</a>
+                </div>
+                <div class="caprese-img-container"></div>
+            </div>
+        </section>
+
+        <section class="about-recipes" id="our-recipes">
+                <div class="prep-time">
+                    <p>Prep Time: 15 mins</p>
+                    <div class="divider"></div>
+                    <p>Total Time: 15 mins</p>
+                    <div class="divider"></div>
+                    <p>Serving: 10</p>
+                </div>
+        </section>
+
+        <section class="ingredients">                    
+            <h2 class="section-title">Ingredients</h2>
+            <div class="container">
+                <div class="img-container-appetizer"></div>
+                <div class="ingredient-table">
+                    <div class="table">
+                        <h4 class="table-title">1X</h4>
+                        <ul>
+                            <li>20 cherry tomatoes</li>
+                            <li>10 ounces mozzarella cheese, cubed</li>
+                            <li>2 tablespoons extra virgin olive oil</li>
+                            <li>2 tablespoons fresh basil leaves, chopped</li>
+                            <li>1 pinch salt</li>
+                            <li>1 pinch ground black pepper</li>
+                            <li>20 toothpicks</li>
+                        </ul>
+                    </div>
+                    <div class="table">
+                        <h4 class="table-title">2X</h4>
+                        <ul>
+                            <li>40 cherry tomatoes</li>
+                            <li>1 ¼ pounds mozzarella cheese, cubed</li>
+                            <li>4 tablespoons extra virgin olive oil</li>
+                            <li>4 tablespoons fresh basil leaves, chopped</li>
+                            <li>2 pinches salt</li>
+                            <li>2 pinches ground black pepper</li>
+                            <li>40 toothpicks</li>
+                        </ul>
+                    </div>
+                    <div class="table">
+                        <h4 class="table-title">4X</h4>
+                        <ul>
+                            <li>80 cherry tomatoes</li>
+                            <li>2 ½pounds mozzarella cheese, cubed</li>
+                            <li>8 tablespoons extra virgin olive oil</li>
+                            <li>8 tablespoons fresh basil leaves, chopped</li>
+                            <li>4 pinches salt</li>
+                            <li>4 pinches ground black pepper</li>
+                            <li>80 toothpicks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="directions">
+            <h3 class="section-title">Directions</h3>            
+            <div class="container">
+                <div class="img-container-direction"></div>
+                <div class="steps">
+                    <div class="step">
+                        <h4>Step 1</h4>
+                        <p>Gather all ingredients.</p>
+                    </div>
+                    <div class="step">
+                        <h4>Step 2</h4>
+                        <p>Toss tomatoes, mozzarella, olive oil, basil, salt, and pepper together in a bowl until well coated.</p>
+                    </div>
+                    <div class="step">
+                        <h4>Step 3</h4>
+                        <p>Skewer one tomato and one piece of mozzarella on each toothpick.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nutrition" id="nutrition">
+            <h3 class="section-title">Nutrition Facts <span>(Per Serving)</span></h3>            
+            <div class="container">
+                <div class="steps">
+                    <div class="step">
+                        <h4>Calories</h4>
+                        <p>120</p>
+                    </div>
+                    <div class="step">
+                        <h4>Fat</h4>
+                        <p>9g</p>
+                    </div>
+                    <div class="step">
+                        <h4>Carbs</h4>
+                        <p>3g</p>
+                    </div>
+                    <div class="step">
+                        <h4>Protein</h4>
+                        <p>6g</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3 class="section-title">Contact Us</h3>
+            <div class="container">
+                <div class="contact-info">
+                    <h5 class="text">Get In Touch</h5>
+                    <p><i class='bx bx-phone'></i>+123 456-7890</p>
+                    <p><i class='bx bx-envelope'></i>example@domain.com</p>
+                    <p><i class='bx bx-map'></i>123 Street, Planet Earth, Milkyway</p>
+                    <div class="divider"></div>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <form action="#">
+                    <h5 class="text">Need A Recipe? Send Us A Message</h5>
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <textarea name="message" id="message" placeholder="Enter your Message"></textarea>
+                    <input type="button" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </sction>
+    </main>
+    <footer>
+        <p>Copyright &copy;2025 by <a href="https://aryanahmed.netlify.app" target="_blank">Aryan Ahmed Adil</a>. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+        <!-- <div class="scroll-to-top">
+            <a href="#"><i class='bx bxs-up-arrow'></i></a>
+        </div> -->
+    </footer>
 </body>
 </html>
