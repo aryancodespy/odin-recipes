@@ -264,16 +264,14 @@ section {
 .contact .container a i {
     font-size: 25px;
     margin: 10px;
-    color: white;
-    background-color: red;
+    color: red;
     border-radius: 5px;
     border: 0;
     transition: all 0.1s ease;
 }
 
 .contact .container a i:hover {
-    background-color: white;
-    color: red;
+    color: black;
 }
 
 .contact .container form {
